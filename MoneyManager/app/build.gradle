@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.xie.moneymanager"
+        minSdkVersion 15
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.github.ihsg:PatternLocker:2.5.6'
+    compile files('libs/mpandroidchartlibrary-2-1-4.jar')
+    compile 'androidx.appcompat:appcompat:1.2.0'
+    compile 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testCompile 'junit:junit:4.13.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+}

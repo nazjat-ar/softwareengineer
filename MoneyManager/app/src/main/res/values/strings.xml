@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoneyManager</string>
+    <string name="consumtype1">吃饭%s</string>
+    <string name="consumtype2">购物</string>
+    <string name="consumtype3">水电费</string>
+    <string name="consumtype4">交通费</string>
+    <string name="consumtype5">no</string>
+    <string name="earntype1">现金</string>
+    <string name="earntype2">支付宝</string>
+    <string name="earntype3">微信</string>
+    <string name="earntype4">信用卡</string>
+    <string name="earntype5">no</string>
+</resources>

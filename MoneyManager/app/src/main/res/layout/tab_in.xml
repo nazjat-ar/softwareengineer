@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:background="#62ca31">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="金额："
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/et_in_earnmoney"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/touming1"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20dp"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text=">>收入类型" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_in_salary"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_remark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_lottery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_parttimejob"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_elsetype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="职业收入"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="投资收入"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="礼金收入"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="利息收入"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv_elseconsumtype"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="其它"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:id="@+id/btn_in_cash"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_zfb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_selector1" />
+
+        <ImageButton
+            android:id="@+id/btn_in_weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_selector1"/>
+
+        <ImageButton
+            android:id="@+id/btn_in_card"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_selector1" />
+        <ImageButton
+            android:id="@+id/btn_in_elseway"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_selector1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="现金" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="支付宝"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="微信"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="银行卡" />
+
+        <TextView
+            android:id="@+id/tv_elsepayway"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="17dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="其它" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_in_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="写点啥备注一下... ..."
+        android:textColorHint="#5c5c5c"
+        android:textStyle="italic"
+        android:layout_marginBottom="40dp"/>
+</LinearLayout>

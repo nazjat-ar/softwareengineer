@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1c62ca31"
+    tools:context="com.example.xie.moneymanager.checkaccounting">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_action_name"/>
+
+            <TextView
+                android:id="@+id/tv_todaydetail"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="今天还没有收支哦！"
+                />
+
+            <ImageButton
+                android:id="@+id/imgbtn_refresh"
+                android:alpha="0.6"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_refresh"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#7f363636"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="支出    ——    收入"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lv_addaccounting"
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:divider="@null"
+        android:layout_height="0dp">
+    </ListView>
+    <Button
+        android:id="@+id/btn_addaccounting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="新  增  账  目"
+        android:textSize="25dp"
+        android:background="@drawable/imagebtn_selector"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xie.moneymanager.LoginActivity">
+    <TextView
+            android:id="@+id/hello_to_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="开启您的记账之旅"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+    <TableLayout
+            android:id="@+id/input_mes"
+            android:layout_below="@id/hello_to_you"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+            <TableRow>
+                <TextView
+                    android:id="@+id/dr_left_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="用户名：" />
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="输入您的用户名" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text="密码：" />
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:hint="输入您的密码" />
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="100dp"
+                android:layout_gravity="bottom">
+                <Button
+                    android:background="@color/colorAccent"
+                    android:id="@+id/login"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="登 录" />
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="注 册" />
+            </TableRow>
+        </TableLayout>
+
+    <ImageView
+        android:layout_below="@id/input_mes"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mainword" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="没有账户？点击注册开启记账之旅"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textColor="#BF9F9F"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+</RelativeLayout>

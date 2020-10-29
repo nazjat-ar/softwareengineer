@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <TextView
+            android:id="@+id/reg_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="注册您的账户!"
+            android:layout_marginTop="40dp"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_txt"
+            android:layout_margin="16dp"
+            android:stretchColumns="1" >
+            <TableRow >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="用户名：" />
+
+                <EditText
+                    android:id="@+id/usernameRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="输入你的昵称（用户名）" />
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="密码：" />
+
+                <EditText
+                    android:id="@+id/passwordRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="输入您的密码" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:text="年龄：" />
+
+                <EditText
+                    android:id="@+id/ageRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:hint="请输入年龄" />
+            </TableRow>
+
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="性别："
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/sexRegister"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/woman"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/nan"
+                        android:text="男"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+
+                    <RadioButton
+                        android:id="@id/woman"
+                        android:text="女"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+    <Button
+        android:id="@+id/Register"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:text="注册"
+        android:layout_margin="40dp"/>
+</RelativeLayout>
